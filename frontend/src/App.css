@@ -1,0 +1,339 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  animation: gradientAnimation 15s ease infinite;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.login-container {
+  height: 400px;
+  width: 500px;
+  background-color: linear-gradient(135deg, #21fc2c, #40ff80, #02a57f);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: linear-gradient(135deg, #21fc2c, #40ff80, #02a57f);
+}
+.login-container .login{
+  text-align: center;
+  color: #f76f07;
+}
+label {
+  width: 90%;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+input[type="text"],
+input[type="password"],
+ select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus ,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.login-container .register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.login-container .register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container .register-link a:hover {
+  text-decoration: underline;
+}
+/* Employee Page */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(270deg, #5fff9c, #a2fc2c, #f3e51a);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.Emp-login-container {
+  background: linear-gradient(270deg, #5fff9c, #a2fc2c, #f3e51a);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 400%;
+  text-align: left;
+  border: linear-gradient(135deg, #21fc2c, #40ff80, #02a57f);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #19aa06;
+  text-align: center;
+}
+div {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+select {
+  appearance: none; 
+  background-size: 10px;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+@media (max-width: 400px) {
+  .login-container {
+      padding: 20px;
+      max-width: 100%;
+  }
+}
+/* CSS for Dashboard */
+/* Reset and Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.headerStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.headerStyle img {
+  height: 50px;
+}
+
+/* Navigation Styles */
+.navStyle {
+  display: flex;
+  align-items: center;
+}
+
+.navStyle a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navStyle a:hover {
+  color: #ffa500;
+}
+
+.navStyle span {
+  font-weight: bold;
+  color: #fff;
+  margin-right: 15px;
+}
+
+/* Welcome Message Styles */
+.welcomeStyle {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}
+
+.welcomeStyle h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+/* css for Employeelist  */
+/* Container for EmployeeList */
+.employeeListContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.employeeListContainer h2{
+  position: fixed; 
+  display: flex; 
+  top: 60px;
+  right: 550px; 
+  font-size:400%;
+  justify-content: center;
+  text-align: center;
+  color:  #05c946;
+}
+.employeeActions span{
+  position: fixed; 
+  display: flex; 
+  color: coral;
+  top: 160px; 
+  right: 640px; 
+  font-size: x-large;
+}
+.createEmployeeButton {
+  position: fixed;           
+  right: 45px;              
+  top: 158px;               
+  padding: 10px 16px;
+  background-color: #f6faf6;
+  color: rgb(17, 17, 17);
+  width: 424px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.createEmployeeButton:hover {
+  background-color: #45a049;
+}
+.searchContainer {
+  position: fixed; 
+  display: flex;
+  right: 45px; 
+  top: 220px;  
+  width: 424px;
+  justify-content: center;   /* Center aligns the search container */
+  gap: 10px;
+  margin-bottom: 20px;     /* Ensures it spans the full width of the screen */
+}
+.searchContainer label{
+  position: fixed; 
+  display: flex; 
+  color: coral;
+  top: 225px;
+  right: 0px; 
+  font-size: x-large;  
+  display: inline-block;
+  
+}
+.employeeTable {
+  position: relative;
+  top: 12cap;
+  width: 100%;                  /* Full width table */
+  border-collapse: collapse;    /* Collapse borders for a cleaner look */
+  margin: 0 auto;               /* Center align the table */
+}
+.employeeTable button{
+  width: 80px;
+  height: 35px;
+  text-align: center;
+}
+.employeeTable th, .employeeTable td {
+  border: 1px solid #ddd;
+  padding: 18px;
+  text-align: center;
+}
+
+.employeeTable th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.employeeTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employeeTable tr:hover {
+  background-color: #ddd;
+}
